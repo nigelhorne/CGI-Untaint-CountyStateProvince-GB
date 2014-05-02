@@ -1,4 +1,4 @@
-CGI::Untaint::CountyStateProvince Version 0.05
+CGI::Untaint::CountyStateProvince::GB Version 0.11
 
 INSTALLATION
 
@@ -14,21 +14,21 @@ SUPPORT AND DOCUMENTATION
 After installing, you can find documentation for this module with the
 perldoc command.
 
-    perldoc CGI::Untaint::CountyStateProvince
+    perldoc CGI::Untaint::CountyStateProvince::GB
 
 You can also look for information at:
 
     RT, CPAN's request tracker
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=CGI-Untaint-CountyStateProvince
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=CGI-Untaint-CountyStateProvince-GB
 
     AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/CGI-Untaint-CountyStateProvince
+        http://annocpan.org/dist/CGI-Untaint-CountyStateProvince-GB
 
     CPAN Ratings
-        http://cpanratings.perl.org/d/CGI-Untaint-CountyStateProvince
+        http://cpanratings.perl.org/d/CGI-Untaint-CountyStateProvince-GB
 
     Search CPAN
-        http://search.cpan.org/dist/CGI-Untaint-CountyStateProvince/
+        http://search.cpan.org/dist/CGI-Untaint-CountyStateProvince-GB/
 
 
 LICENSE AND COPYRIGHT

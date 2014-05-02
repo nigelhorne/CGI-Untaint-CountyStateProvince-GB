@@ -20,7 +20,7 @@ if($@) {
 
 	my $tps = Test::Pod::Snippets->new;
 
-	my @modules = qw/ CGI::Untaint::CountyStateProvince /;
+	my @modules = qw/ CGI::Untaint::CountyStateProvince::GB /;
 
 	$tps->runtest( module => $_, testgroup => 1 ) for @modules;
 }

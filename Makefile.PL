@@ -3,20 +3,25 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME                => 'CGI::Untaint::CountyStateProvince',
+    NAME                => 'CGI::Untaint::CountyStateProvince::GB',
     AUTHOR              => q{Nigel Horne <njh@bandsman.co.uk>},
-    VERSION_FROM        => 'lib/CGI/Untaint/CountyStateProvince.pm',
-    ABSTRACT_FROM        => 'lib/CGI/Untaint/CountyStateProvince.pm',
-    ($ExtUtils::MakeMaker::VERSION >= 6.3002
+    VERSION_FROM        => 'lib/CGI/Untaint/CountyStateProvince/GB.pm',
+    ABSTRACT_FROM        => 'lib/CGI/Untaint/CountyStateProvince/GB.pm',
+    ((defined($ExtUtils::MakeMaker::VERSION) &&
+     ($ExtUtils::MakeMaker::VERSION >= 6.3002))
       ? ('LICENSE'=> 'GPL')
       : ()),
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0.82,	# Need new_ok()
 	'CGI::Untaint' => 0,
+	'CGI::Untaint::CountyStateProvince' => 0.04,
 	'Test::NoWarnings' => 0,
+	'Locale::SubCountry' => 0,
+	'Carp' => 0,
 	# 'Test::Kwalitee' => 0,
+	'Test::Requires' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'CGI-Untaint-CountyStateProvince-*' },
+    clean               => { FILES => 'CGI-Untaint-CountyStateProvince-GB*' },
 );

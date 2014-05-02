@@ -1,10 +1,13 @@
 #!perl -T
 
-use Test::More tests => 1;
+use strict;
+use Test::More tests => 3;
 
 BEGIN {
-    use_ok( 'CGI::Untaint::CountyStateProvince' ) || print "Bail out!
-";
+	use_ok('CGI::Untaint');
+	use_ok( 'CGI::Untaint::CountyStateProvince::GB' ) || print "Bail out!";
 }
 
-diag( "Testing CGI::Untaint::CountyStateProvince $CGI::Untaint::CountyStateProvince::VERSION, Perl $], $^X" );
+require_ok( 'CGI::Untaint::CountyStateProvince::GB' ) || print "Bail out!";
+
+diag( "Testing CGI::Untaint::CountyStateProvince::GB $CGI::Untaint::CountyStateProvince::GB::VERSION, Perl $], $^X" );

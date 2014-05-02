@@ -48,7 +48,7 @@ TODO: {
     "placeholder date/time"       => qr(Date/time)
   );
 
-  module_boilerplate_ok('lib/CGI/Untaint/CountyStateProvince.pm');
+  module_boilerplate_ok('lib/CGI/Untaint/CountyStateProvince/GB.pm');
 
 
 }
