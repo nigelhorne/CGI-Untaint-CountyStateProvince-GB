@@ -115,6 +115,7 @@ our %counties = (
 
 our %abbreviations = (
 	'beds' => 'bedfordshire',
+	'bucks' => 'buckinghamshire',
 	'cambs' => 'cambridgeshire',
 	'cleveland' => 'teesside',
 	'co durham' => 'county durham',
