@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use diagnostics;
 use Test::NoWarnings;
-use Test::More tests => 14;
+use Test::Most tests => 14;
 
 BEGIN {
 	use_ok('CGI::Untaint');
