@@ -115,6 +115,7 @@ our %counties = (
 
 our %abbreviations = (
 	'beds' => 'bedfordshire',
+	'bucks' => 'buckinghamshire',
 	'cambs' => 'cambridgeshire',
 	'cleveland' => 'teesside',
 	'co durham' => 'county durham',
@@ -133,6 +134,8 @@ our %abbreviations = (
 	'oxon' => 'oxfordshire',
 	'greater manchester' => 'manchester',
 	's yorkshire' => 'south yorkshire',
+	's glos' => 'gloucestershire',
+	'south gloster' => 'gloucestershire',
 	'westmidlands' => 'west midlands',
 	'west mids' => 'west midlands',
 	'west yorks' => 'west yorkshire',

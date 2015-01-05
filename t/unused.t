@@ -2,7 +2,7 @@
 
 use strict;
 use warnings;
-use Test::More;
+use Test::Most;
 
 my $can_test = 1;
 
@@ -30,8 +30,10 @@ if($can_test) {
 	if(not $ENV{RELEASE_TESTING}) {
 		plan(skip_all => 'Author tests not required for installation');
 	} else {
-		new_ok('CGI::Untaint');
-		new_ok('CGI::Untaint::CountyStateProvince::GB');
-		plan tests => 3;
+		# There is no constructer that we can use for testing
+		# new_ok('CGI::Untaint');
+		# new_ok('CGI::Untaint::CountyStateProvince::GB');
+		# plan tests => 3;
+		plan tests => 1;
 	}
 }
