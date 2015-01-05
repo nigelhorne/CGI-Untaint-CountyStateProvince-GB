@@ -191,9 +191,9 @@ sub is_valid {
 	}
 
 	my $county = $self->{_validator}->code($value);
-	if($county && ($county ne 'unknown')) {
-		return $value;
-	}
+	# if($county && ($county ne 'unknown')) {
+		# return $value;
+	# }
 
 	return exists($counties{$value}) ? $value : 0;
 }
@@ -271,7 +271,7 @@ L<http://search.cpan.org/dist/CGI-Untaint-CountyStateProvince-GB>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012 Nigel Horne.
+Copyright 2012-15 Nigel Horne.
 
 This program is released under the following licence: GPL
 

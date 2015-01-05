@@ -1,5 +1,8 @@
 Revision history for CGI-Untaint-CountyStateProvince-GB
 
+0.12
+	Don't allow 'west berkshire'
+
 0.11	Sun Dec 30 17:01:14 EST 2012
 	Added t/strict.t
 	Handle westmidlands without a space, mapping to West Midlands
