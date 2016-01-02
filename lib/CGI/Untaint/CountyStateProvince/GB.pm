@@ -127,6 +127,7 @@ our %abbreviations = (
 	'hants' => 'hampshire',
 	'herts' => 'hertfordshire',
 	'lancs' => 'lancashire',
+	'lancs.' => 'lancashire',
 	'middx' => 'middlesex',
 	'n yorkshire' => 'north yorkshire',
 	'northants' => 'northamptonshire',
@@ -274,7 +275,7 @@ L<http://search.cpan.org/dist/CGI-Untaint-CountyStateProvince-GB>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012-15 Nigel Horne.
+Copyright 2012-16 Nigel Horne.
 
 This program is released under the following licence: GPL
 
