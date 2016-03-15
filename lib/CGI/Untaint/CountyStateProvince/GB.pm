@@ -123,6 +123,7 @@ our %abbreviations = (
 	'east yorks' => 'east yorkshire',
 	'glasgow' => 'west lothian',
 	'gloucester' => 'gloucestershire',
+	'great london' => 'london',
 	'greater london' => 'london',
 	'hants' => 'hampshire',
 	'herts' => 'hertfordshire',
