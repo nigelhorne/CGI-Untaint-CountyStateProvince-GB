@@ -129,6 +129,7 @@ our %abbreviations = (
 	'herts' => 'hertfordshire',
 	'lancs' => 'lancashire',
 	'lancs.' => 'lancashire',
+	'Lancs.' => 'lancashire',
 	'middx' => 'middlesex',
 	'n yorkshire' => 'north yorkshire',
 	'northants' => 'northamptonshire',
