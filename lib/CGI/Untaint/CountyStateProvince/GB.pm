@@ -177,7 +177,7 @@ sub is_valid {
 
 	my $value = lc($self->value);
 
-	if($value =~ /([a-z\s]+)/) {
+	if($value =~ /([a-z][a-z\s]+)/) {
 		$value = $1;
 	} else {
 		return 0;
@@ -196,7 +196,7 @@ sub is_valid {
 		}
 	}
 
-	my $county = $self->{_validator}->code($value);
+	# my $county = $self->{_validator}->code($value);
 	# if($county && ($county ne 'unknown')) {
 		# return $value;
 	# }
