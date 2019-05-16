@@ -139,6 +139,7 @@ our %abbreviations = (
 	's yorkshire' => 'south yorkshire',
 	's glos' => 'gloucestershire',
 	'south gloster' => 'gloucestershire',
+	'vale of glamorgan' => 'glamorgan',
 	'westmidlands' => 'west midlands',
 	'west mids' => 'west midlands',
 	'west yorks' => 'west yorkshire',
@@ -248,7 +249,6 @@ You can find documentation for this module with the perldoc command.
 
 	perldoc CGI::Untaint::CountyStateProvince::GB
 
-
 You can also look for information at:
 
 =over 4
@@ -256,10 +256,6 @@ You can also look for information at:
 =item * RT: CPAN's request tracker
 
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=CGI-Untaint-CountyStateProvince-GB>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/CGI-Untaint-CountyStateProvince-GB>
 
 =item * CPAN Ratings
 
@@ -277,10 +273,9 @@ L<http://search.cpan.org/dist/CGI-Untaint-CountyStateProvince-GB>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012-16 Nigel Horne.
+Copyright 2012-19 Nigel Horne.
 
-This program is released under the following licence: GPL
-
+This program is released under the following licence: GPL2
 
 =cut
 
