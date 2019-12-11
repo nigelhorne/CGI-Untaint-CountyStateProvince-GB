@@ -11,7 +11,7 @@ CGI::Untaint::CountyStateProvince::GB - Add British counties to CGI::Untaint::Co
 
 # VERSION
 
-Version 0.11
+Version 0.12
 
 # SYNOPSIS
 

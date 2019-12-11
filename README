@@ -1,4 +1,4 @@
-CGI::Untaint::CountyStateProvince::GB Version 0.11
+CGI::Untaint::CountyStateProvince::GB Version 0.12
 
 INSTALLATION
 
@@ -20,9 +20,6 @@ You can also look for information at:
 
     RT, CPAN's request tracker
         http://rt.cpan.org/NoAuth/Bugs.html?Dist=CGI-Untaint-CountyStateProvince-GB
-
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/CGI-Untaint-CountyStateProvince-GB
 
     CPAN Ratings
         http://cpanratings.perl.org/d/CGI-Untaint-CountyStateProvince-GB
