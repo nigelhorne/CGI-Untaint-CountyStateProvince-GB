@@ -5,16 +5,10 @@ use CGI::Untaint;
 
 BEGIN { use_ok('CGI::Untaint::CountyStateProvince::GB') }
 
-# Mock params for testing
-my $mock_params = sub {
-	return { state => shift };
-};
-
 # Helper function to create CGI::Untaint object
 sub create_untaint_object {
-	my ($value) = @_;
-	my $params = $mock_params->($value);
-	return CGI::Untaint->new($params);
+	my $value = shift;
+	return new_ok('CGI::Untaint' => [ state => $value ]);
 }
 
 # Test 1: Valid counties
@@ -28,11 +22,11 @@ foreach my $county (@valid_counties) {
 # Test 2: Valid abbreviations
 my %abbreviation_tests = (
 	'Beds' => 'bedfordshire',
-	'Cambs'	 => 'cambridgeshire',
-	'Lancs'	 => 'lancashire',
-	'Middx'	 => 'middlesex',
+	'Cambs'	=> 'cambridgeshire',
+	'Lancs' => 'lancashire',
+	'Middx' => 'middlesex',
 	'West Yorks' => 'west yorkshire',
-	'Herts'	 => 'hertfordshire',
+	'Herts' => 'hertfordshire',
 );
 foreach my $abbr (keys %abbreviation_tests) {
 	my $expected = $abbreviation_tests{$abbr};
@@ -51,10 +45,10 @@ foreach my $county (@invalid_counties) {
 
 # Test 4: Edge cases
 my @edge_cases = (
-	{ input => '',	  expected => undef, description => 'Empty string should fail' },
-	{ input => '  ',	expected => undef, description => 'Whitespace-only input should fail' },
-	{ input => 'KENT',  expected => 'kent', description => "Case insensitivity for 'KENT'" },
-	{ input => " Middlesex\t",  expected => 'middlesex', description => "Trim whitespace for ' Middlesex\t'" },
+	{ input => '', expected => undef, description => 'Empty string should fail' },
+	{ input => '  ', expected => undef, description => 'Whitespace-only input should fail' },
+	{ input => 'KENT', expected => 'kent', description => "Case insensitivity for 'KENT'" },
+	{ input => " Middlesex\t", expected => 'middlesex', description => "Trim whitespace for ' Middlesex\t'" },
 );
 foreach my $case (@edge_cases) {
 	my $untaint = create_untaint_object($case->{input});
