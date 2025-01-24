@@ -257,23 +257,17 @@ You can also look for information at:
 
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=CGI-Untaint-CountyStateProvince-GB>
 
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/CGI-Untaint-CountyStateProvince-GB>
-
 =item * Search CPAN
 
 L<http://search.cpan.org/dist/CGI-Untaint-CountyStateProvince-GB>
 
 =back
 
-
 =head1 ACKNOWLEDGEMENTS
-
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012-19 Nigel Horne.
+Copyright 2012-2025 Nigel Horne.
 
 This program is released under the following licence: GPL2
 
