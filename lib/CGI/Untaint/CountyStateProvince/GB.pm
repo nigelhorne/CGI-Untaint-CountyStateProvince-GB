@@ -20,6 +20,12 @@ Version 0.13
 
 our $VERSION = '0.13';
 
+BEGIN {
+	my $gb = CGI::Untaint::CountyStateProvince::GB->_new();
+
+	push @CGI::Untaint::CountyStateProvince::countries, $gb;
+};
+
 our %counties = (
 	'aberdeenshire' => 1,
 	'anglesey' => 1,
@@ -218,12 +224,6 @@ sub value {
 
 	return $self->{value};
 }
-
-BEGIN {
-	my $gb = CGI::Untaint::CountyStateProvince::GB->_new();
-
-	push @CGI::Untaint::CountyStateProvince::countries, $gb;
-};
 
 =head1 AUTHOR
 
